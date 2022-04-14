@@ -10,6 +10,10 @@ describe('subtract', function() {
 
   it('should coerce arguments to numbers', function() {
     assert.strictEqual(subtract('6', '4'), 2);
+  });
+
+  it('should fail when arguments are not numbers', function() {
     assert.deepStrictEqual(subtract('x', 'y'), NaN);
+    assert.deepStrictEqual(subtract('x', 4), NaN);
   });
 });
