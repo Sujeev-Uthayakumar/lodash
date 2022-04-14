@@ -7,4 +7,8 @@ describe('capitalize', function() {
     assert.strictEqual(capitalize('Fred'), 'Fred');
     assert.strictEqual(capitalize(' fred'), ' fred');
   });
+
+  it('should convert numbers to string', function() {
+    assert.strictEqual(capitalize(1111), '1111');
+  });
 });
