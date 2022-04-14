@@ -7,11 +7,6 @@ describe("findMiddle", function () {
     assert.strictEqual(findMiddle(array), 3);
   });
 
-  it("should return the middle two indices index with the true parameter", function () {
-    let array = [1, 2, 3, 4, 5, 6, 7, 8];
-    assert.strictEqual(findMiddle(array, true), 4);
-  });
-
   it("should return the 4th index without the true parameter", function () {
     let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     assert.strictEqual(findMiddle(array), 5)
