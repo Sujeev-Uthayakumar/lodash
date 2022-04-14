@@ -15,3 +15,5 @@ function findMiddle(array, even=false){
         return [array[Math.floor(array.length / 2) - 1], array[Math.floor(array.length / 2)]];
     }
 }
+
+export default findMiddle;
