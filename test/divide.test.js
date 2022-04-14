@@ -10,6 +10,10 @@ describe('divide', function() {
 
   it('should coerce arguments to numbers', function() {
     assert.strictEqual(divide('6', '4'), 1.5);
+  });
+
+  it('should fail when arguments are not numbers', function() {
     assert.deepStrictEqual(divide('x', 'y'), NaN);
+    assert.deepStrictEqual(divide('x', 4), NaN);
   });
 });
